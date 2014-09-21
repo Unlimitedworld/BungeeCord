@@ -82,8 +82,7 @@ public class YamlReconnectHandler extends AbstractReconnectHandler
 
     private String key(ProxiedPlayer player)
     {
-        InetSocketAddress host = player.getPendingConnection().getVirtualHost();
-        return player.getName() + ";" + host.getHostString() + ":" + host.getPort();
+        return player.getName();
     }
 
     @Override
